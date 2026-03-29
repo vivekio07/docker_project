@@ -1,0 +1,111 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin: 0;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    background-color:#90C1D8;
+}
+
+h1{
+
+    width: 1100px;
+    height: 100px;
+    border: 3px solid black;
+    background-color: #D9D9D9;
+    padding: 5px;
+    margin: auto; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    font-weight:bold;
+    color:black;
+    font-family: Arial, sans-serif;
+     border-radius: 56px; 
+
+
+} 
+/* Capsule container for buttons */
+.choices {
+  width: 580px;
+  height: auto; /* let height be determined by padding + button height */
+  display: flex;
+  justify-content: space-between;
+  padding: 10px; /* equal space on all sides */
+  gap: 10px; /* equal space between buttons */
+  border-radius: 30px;
+  background: #0DE9AF;
+  border: 5px solid #10010100;
+  backdrop-filter: blur(8px);
+}
+
+/* Buttons inside capsule*/
+.choices button {
+  width: 180px;
+  height: 145px;
+  border-radius: 30%;
+  flex-shrink: 0;
+  border: 3px solid #333;
+  background:#feffff;
+  backdrop-filter: blur(8px);
+  font-size: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  text-shadow:
+    -1px -1px 0 black,
+     1px -1px 0 black,
+    -1px  1px 0 black,
+     1px  1px 0 black;
+    transition: background 0.3s ease; 
+}
+ 
+
+.choices button img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* keeps aspect ratio */
+}
+
+
+/* Hover effect */
+.choices button:hover {
+  background: #fb970b; /* new color when hovering */
+  transform: scale(1.1);}
+
+/* Focus effect */
+.choices button:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(2, 16, 48, 0.559);
+}
+#playerdisplay,
+#computerdisplay {
+  /* Add your styles here, for example: */
+  font-size: 32px;
+  color: #010101;
+  margin: 16px 0;
+  font-weight: bold;
+  text-align: center;
+  flex: 1;
+
+}
+
+#resultdisplay {
+  font-size: 48px;
+  color: #010101;
+  margin: 16px 0;
+  font-weight: bold;
+  text-align: center;
+  flex: 1;
+}
+
+.green-text {
+  color: green !important;
+}
+
+.red-text {
+  color: red !important;
+}
